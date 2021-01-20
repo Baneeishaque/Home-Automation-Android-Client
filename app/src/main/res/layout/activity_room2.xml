@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RoomActivity">
+
+    <Button
+        android:id="@+id/fan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/bulb"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="5dp"
+        android:text="Fan"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/bulb"
+        app:layout_constraintLeft_toRightOf="@id/fan"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="5dp"
+        android:text="Bulb"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/ac"
+        app:layout_constraintLeft_toRightOf="@id/bulb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="5dp"
+        android:text="AC"
+        android:textColor="@android:color/black" />
+
+    <!--<Button-->
+        <!--android:id="@+id/bSearch"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/shape_button"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:text="Search"-->
+        <!--android:drawableLeft="@android:drawable/ic_menu_search"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
